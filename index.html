@@ -17,16 +17,16 @@
       </nav>
     </header>
     <main>
-      <div>
+      <div class="create-container">
         <h2>Create New Pizza</h2>
-        <form action="/">
+        <form class="create-form" action="/">
           <label for="input-name">Name</label>
           <input
             required
             type="text"
             id="input-name"
             maxlength="30"
-            placeholder="(required)"
+            placeholder="Enter name (required)"
           />
           <label for="input-price">Price</label>
           <input
@@ -35,7 +35,7 @@
             id="input-price"
             step="0.01"
             min="0"
-            placeholder="(required)"
+            placeholder="Enter price (required)"
           />
           <label for="select-heat">Choose heat level:</label>
           <select name="select-heat" id="select-heat">
@@ -49,7 +49,7 @@
             type="text"
             id="input-toppings"
             minlength="2"
-            placeholder="(required)"
+            placeholder="Enter toppings (required)"
           />
           <button class="add-topping">Add topping</button>
           <ul class="toppings-list"></ul>
@@ -79,8 +79,11 @@
               Pizza number 5
             </option>
           </select>
-          <button>Submit your pizza</button>
+          <button class="submit-btn">Submit your pizza</button>
         </form>
+      </div>
+      <div class="menu-container">
+        <h2>menu</h2>
       </div>
     </main>
   </body>
