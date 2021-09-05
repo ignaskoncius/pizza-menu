@@ -1,0 +1,22 @@
+.sort-container {
+  margin: 0 auto;
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sort-container button {
+  margin: 0 0.5rem;
+  color: snow;
+  width: 130px;
+  padding: 0.5rem 1rem;
+  background-color: var(--hover-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sort-container button:hover {
+  transform: scale(1.05);
+}

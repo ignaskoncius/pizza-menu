@@ -17,8 +17,21 @@
       </nav>
     </header>
     <main>
+      <!-- menu container -->
+      <div class="menu-container">
+        <div class="sort-container">
+          <button>Sort by name</button>
+          <button>Sort by price</button>
+          <button>Sort by heat</button>
+        </div>
+        <div class="menu-list">
+          <h2>menu</h2>
+        </div>
+      </div>
+      <!-- create pizza container -->
       <div class="create-container">
         <h2>Create New Pizza</h2>
+        <h4 class="error-msg">Error</h4>
         <form class="create-form" action="/">
           <label for="input-name">Name</label>
           <input
@@ -81,9 +94,6 @@
           </select>
           <button class="submit-btn">Submit your pizza</button>
         </form>
-      </div>
-      <div class="menu-container">
-        <h2>menu</h2>
       </div>
     </main>
   </body>
