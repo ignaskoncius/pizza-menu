@@ -9,7 +9,77 @@
   <body>
     <header>
       <h2>Best Pizza Place</h2>
-      <nav></nav>
+      <nav>
+        <button>See Menu</button>
+        <button>Add New Pizza</button>
+      </nav>
     </header>
+    <main>
+      <div>
+        <h2>Create New Pizza</h2>
+        <form action="/">
+          <label for="input-name">Name</label>
+          <input
+            required
+            type="text"
+            id="input-name"
+            maxlength="30"
+            placeholder="(required)"
+          />
+          <label for="input-price">Price</label>
+          <input
+            required
+            type="number"
+            id="input-price"
+            step="0.01"
+            min="0"
+            placeholder="(required)"
+          />
+          <label for="select-heat">Choose heat level:</label>
+          <select name="select-heat" id="select-heat">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <label for="input-toppings">Enter toppings</label>
+          <input
+            required
+            type="text"
+            id="input-toppings"
+            minlength="2"
+            placeholder="(required)"
+          />
+          <button class="add-topping">Add topping</button>
+          <ul class="toppings-list"></ul>
+          <label for="pizza-image">Select pizza photo:</label>
+          <select name="pizza-image" id="pizza-image">
+            <option
+              value="https://toppng.com/uploads/preview/pizza-png-11553999379orjd1miyt1.png"
+            >
+              Pizza number 1
+            </option>
+            <option
+              value="https://banner2.cleanpng.com/20180328/caw/kisspng-pizza-take-out-bacon-italian-cuisine-pepperoni-pizza-5abbe270bd70b0.064123651522262640776.jpg"
+            >
+              Pizza number 2
+            </option>
+            <option value="https://image.pngaaa.com/799/2725799-middle.png">
+              Pizza number 3
+            </option>
+            <option
+              value="https://www.pikpng.com/pngl/m/327-3271979_half-a-pizza-transparent-background-clipart.png"
+            >
+              Pizza number 4
+            </option>
+            <option
+              value="https://e7.pngegg.com/pngimages/975/819/png-clipart-california-style-pizza-sicilian-pizza-ham-recipe-pizza-food-recipe.png"
+            >
+              Pizza number 5
+            </option>
+          </select>
+          <button>Submit your pizza</button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
