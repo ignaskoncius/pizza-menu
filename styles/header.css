@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fc4445;
+  padding: 1rem 0.5rem;
+  color: snow;
+}
+
+.header-nav {
+  width: 30%;
+}
+
+.active {
+  background-color: #bb6363;
+}
+
+.header-nav button {
+  width: 200px;
+  padding: 0.5rem 1rem;
+  background-color: #9e3a3a;
+  color: inherit;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-nav button:hover {
+  background-color: #b15d5d;
+  transform: scale(1.05);
+}
