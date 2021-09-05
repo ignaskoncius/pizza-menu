@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fc4445;
+  background-color: var(--primary-color);
   padding: 1rem 0.5rem;
   color: snow;
 }
@@ -18,7 +18,7 @@
 .header-nav button {
   width: 200px;
   padding: 0.5rem 1rem;
-  background-color: #9e3a3a;
+  background-color: var(--secondary-color);
   color: inherit;
   border: none;
   border-radius: 20px;
@@ -27,6 +27,6 @@
 }
 
 .header-nav button:hover {
-  background-color: #b15d5d;
+  background-color: var(--hover-color);
   transform: scale(1.05);
 }
