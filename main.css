@@ -21,3 +21,11 @@ main {
   --secondary-color: #9e3a3a;
   --hover-color: #b15d5d;
 }
+
+.enable {
+  display: block;
+}
+
+.disable {
+  display: none;
+}

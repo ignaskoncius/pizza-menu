@@ -5,33 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./app.js" defer></script>
+    <script type="module" src="./JS/menu.js"></script>
     <title>Pizzeria</title>
   </head>
   <body>
     <header class="header">
       <h2 class="logo">Best Pizza Place</h2>
       <nav class="header-nav">
-        <button class="header-btn-menu">See Menu</button>
-        <button class="header-btn-add">Add New Pizza</button>
+        <button id="header-btn-menu">See Menu</button>
+        <button id="header-btn-add">Add New Pizza</button>
       </nav>
     </header>
     <main>
       <!-- menu container -->
       <div class="menu-container">
         <div class="sort-container">
-          <button>Sort by name</button>
-          <button>Sort by price</button>
-          <button>Sort by heat</button>
+          <button class="sort-by-name">Sort by name</button>
+          <button class="sort-by-price">Sort by price</button>
+          <button class="sort-by-heat">Sort by heat</button>
         </div>
-        <div class="menu-list">
-          <h2>menu</h2>
-        </div>
+        <div class="menu-list"></div>
       </div>
       <!-- create pizza container -->
-      <div class="create-container">
+      <div class="create-container disable">
         <h2>Create New Pizza</h2>
-        <h4 class="error-msg">Error</h4>
+        <div class="error-msg disabled"></div>
         <form class="create-form" action="/">
           <label for="input-name">Name</label>
           <input
@@ -64,7 +63,7 @@
             minlength="2"
             placeholder="Enter toppings (required)"
           />
-          <button class="add-topping">Add topping</button>
+          <button id="add-topping">Add topping</button>
           <ul class="toppings-list"></ul>
           <label for="pizza-image">Select pizza photo:</label>
           <select name="pizza-image" id="pizza-image">
@@ -92,7 +91,7 @@
               Pizza number 5
             </option>
           </select>
-          <button class="submit-btn">Submit your pizza</button>
+          <button type="submit" id="submit-btn">Submit your pizza</button>
         </form>
       </div>
     </main>

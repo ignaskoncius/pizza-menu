@@ -9,6 +9,7 @@
 .error-msg {
   color: var(--primary-color);
   font-size: 0.8rem;
+  font-weight: 900;
 }
 
 .create-container h2 {
@@ -30,7 +31,7 @@ select {
   background-color: rgb(226, 226, 226);
 }
 
-.add-topping {
+#add-topping {
   margin: 0 auto;
   color: snow;
   width: 200px;
@@ -42,11 +43,11 @@ select {
   transition: all 0.3s ease-in-out;
 }
 
-.add-topping:hover {
+#add-topping:hover {
   transform: scale(1.05);
 }
 
-.submit-btn {
+#submit-btn {
   margin: 0 auto;
   color: snow;
   width: 400px;
@@ -58,7 +59,11 @@ select {
   transition: all 0.3s ease-in-out;
 }
 
-.submit-btn:hover {
+#submit-btn:hover {
   background-color: var(--hover-color);
   transform: scale(1.05);
+}
+
+.toppings-list {
+  font-size: 0.8rem;
 }

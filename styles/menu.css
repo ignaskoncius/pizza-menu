@@ -20,3 +20,81 @@
 .sort-container button:hover {
   transform: scale(1.05);
 }
+
+.menu-list {
+  width: 95%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pizza-card {
+  width: 25%;
+  text-align: center;
+  padding: 2rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.delete-pizza,
+.popUp-delete {
+  width: 200px;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: inherit;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.popUp-cancel {
+  background-color: snow;
+  width: 200px;
+  padding: 0.5rem 1rem;
+  color: inherit;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pizza-card button:hover {
+  transform: scale(1.05);
+}
+
+.pizza-card-photo {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.pizza-card-toppings {
+  word-wrap: break-all;
+}
+
+.pizza-card-heat {
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.delete-popUp {
+  display: none;
+  width: 300px;
+  background-color: var(--hover-color);
+  z-index: 3;
+  position: absolute;
+  top: 45%;
+  right: 40%;
+  padding: 2rem;
+  border-radius: 20px;
+}
